@@ -7,14 +7,14 @@ pipeline {
                 // Define Docker Hub credentials ID
                 DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials'
                 // Define Docker Hub repository name
-                DOCKERHUB_REPO = 'olli3290818/week7_inclass_test1'
+                DOCKERHUB_REPO = 'olli3290818/shopping_cart'
                 // Define Docker image tag
                 DOCKER_IMAGE_TAG = 'latest_v1'
             }
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Kimiollie/dfgfd.git'
+                git branch: 'main', url: 'https://github.com/Kimiollie/ShoppingCart.git'
             }
         }
         stage('Build') {
