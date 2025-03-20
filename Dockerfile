@@ -14,4 +14,4 @@ COPY . /app/
 RUN mvn package -Pdocker
 
 # Run the main class from the built JAR
-CMD ["java", "-jar", "target/tripcostcal.jar"]
+CMD ["java", "-jar", "target/shoppingcart.jar"]
